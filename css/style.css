@@ -2,7 +2,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +28,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+/* 
+HTML5 display-role reset for older browsers 
+*/
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -46,46 +53,49 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* End of Reset */
-/* Start of Custom Styles */
-.content {
-	padding: 0 15px;
-}
+/* 
+End of Reset 
+*/
+/* 
+Start of Custom Styles 
+*/
 body {
 	background-color: LightGray;
+	font-family: 'Roboto', sans-serif; 
+	-webkit-font-smoothing: antialiased;
 }
 div {
 	border: 1px solid Chocolate;
 }
-/* Navigation Section */
+.content {
+	padding: 0 0.938rem;
+	margin:0 auto; 
+	min-width: 37.5rem;
+}
+/* 
+Navigation Section 
+*/
 .top-navigation {
 	background-color: #fff
 }
-.content {
-	width: 970px;
-	height: 70px;
-	margin: 0 auto;
-	padding: 0px 15px;
+.top-navigation > .content {
+	height: 4.375rem;
+	/*padding: 0px 15px;*/
 }
-.logo {
-	height: 70px;
-}
-.top-navigation > .logo {
-	height: 70px;
+.top-navigation .logo {
+	height: 4.375rem;
 }
 .top-navigation .links {
 	float: right;
-	font-family: 'Roboto', sans-serif; 
 	color: #838994; 
-	font-size: 16px; 
-	margin-top: 25px;
-	-webkit-font-smoothing: antialiased;
+	font-size: 1.04rem; 
+	margin-top: 1.7rem;
 }
 .top-navigation .links li {
 	display: inline-block;
-	margin-left: 25px;
+	margin-left: 1.563rem;
 }
-.top-navigation .links .active {
+.top-navigation .links li.active {
 	color: #4c5058;
 	font-weight: 500;
 }
@@ -93,8 +103,34 @@ div {
 	color: #333333;
 	cursor: pointer;
 }
-
 .top-navigation .links a {
 	text-decoration: none;
 }
-
+/**
+ * Introduction Section
+ */
+.introduction {
+	background-image: url('../images/first-background.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-image: cover;
+	height: 45.938rem;
+	overflow: auto;
+}
+.introduction h1,
+.introduction h3 {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+.content h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+/**
+ * The buttons
+ */
