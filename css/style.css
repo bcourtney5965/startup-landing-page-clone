@@ -134,3 +134,24 @@ Navigation Section
 /**
  * The buttons
  */
+.buttons {
+	margin: 0 auto;
+}
+.button {
+	width: 9.688rem;
+	background-color: #f15a29;
+	border-color: #f15a29;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	font-size: 1.125rem;
+	color: white;	
+	display: block;
+	margin: 1rem;
+}
+
+button:hover {
+	background-color: #d9400e;
+    border-color: #cf3d0e;
+	cursor: pointer;
+}
