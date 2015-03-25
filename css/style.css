@@ -60,12 +60,12 @@ End of Reset
 Start of Custom Styles 
 */
 body {
-	background-color: LightGray;
+	/* background-color: LightGray; */
 	font-family: 'Roboto', sans-serif; 
 	-webkit-font-smoothing: antialiased;
 }
 div {
-	border: 1px solid Chocolate;
+	/* border: 1px solid Chocolate; */
 }
 .content {
 	padding: 0 0.938rem;
@@ -83,7 +83,6 @@ Navigation Section
 }
 .top-navigation > .content {
 	height: 4.375rem;
-	/*padding: 0px 15px;*/
 }
 .top-navigation .logo {
 	height: 4.375rem;
@@ -189,7 +188,51 @@ button:hover {
 .cases .devices p {
 	font-weight: 300;
 	font-size: 1.313rem;
+}/**
+ * The Footer Section
+ */
+.social {
+	background-color: #fff;
+	text-align: center;
+	padding-bottom: 9.375rem;
+	text-align: center;
 }
+.social hr {
+	border: 0;
+	border-top: 1px, solid, #eaebec; 
+	margin: 1.313rem, 0;
+}
+.social > .icons > li {
+	border-radius: 1.25rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	margin: 1.25rem, 5px;
+	border: 1px, solid, #eaebec;
+	padding: 0.625rem 0;
+	text-align: center;
+}
+.social > .icons > li:hover {
+	cursor: pointer;	
+}
+.social > .twitter {
+	color: #eaebec;
+}
+.social > .facebook {
+	color: #4c66a4;
+}
+.social > .instagram {
+	color: #3f729b;
+}
+.copy {
+	padding-top: 0.9rem;
+	font-weight: 300;
+	color: #838994;
+}
+
+
+
+
 
 
 
